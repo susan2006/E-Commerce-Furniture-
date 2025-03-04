@@ -8,15 +8,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="Fur-icon.png" />
   </head>
 
-  <body>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    "
+  >
     <header>
       <h1 style="text-align: center; color: #000000">
         <u>Welcome to Furnify!</u>
@@ -43,17 +45,21 @@
             <li class="nav-item">
               <a class="nav-link" href="offer.html">Offers</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="living.html">Living</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bedroom.html">Bedrooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kitchen.html">Kitchen</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="&study.html">Office and Study Furniture</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Living Room
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sofas.html">Sofas</a></li>
+                <li><a class="dropdown-item" href="chairs.html">Chairs</a></li>
+                <li><a class="dropdown-item" href="tables.html">Tables</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -63,14 +69,44 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Bedroom
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                <li><a class="dropdown-item" href="beds.html">Beds</a></li>
+                <li><a class="dropdown-item" href="wardrobes.html">Wardrobes</a></li>
+                <li><a class="dropdown-item" href="nightstands.html">Nightstands</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kitchen
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cabinets.html">Cabinets</a></li>
+                <li><a class="dropdown-item" href="dining.html">Dining Tables</a></li>
+                <li><a class="dropdown-item" href="stools.html">Bar Stools</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Office & Study
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="desks.html">Desks</a></li>
+                <li><a class="dropdown-item" href="chairs.html">Office Chairs</a></li>
+                <li><a class="dropdown-item" href="shelves.html">Bookshelves</a></li>
               </ul>
             </li>
           </ul>
@@ -82,128 +118,57 @@
 
     <section id="living">
       <h2>Living Room</h2>
-      <img
-        src="Images/sofa1.jpg"
-        alt="Stylish Sofa"
-        
-      />
-      <img
-        src="Images/sofa2.jpg"
-        alt="Comfortable Sofa"
-        
-      />
-      <img
-        src="Images/sofa3.jpg"
-        alt="Modern Sofa"
-
-      />
-      <img
-        src="Images/sofa4.jpg"
-        alt="Luxury Sofa"
-
-      />
-      <img
-        src="Images/living1.jpg"
-        alt="Cozy Living Room"
-
-      />
-      <img
-        src="Images/living2.jpg"
-        alt="Spacious Living Room"
-
-      />
-      <img
-        src="Images/living3.jpg"
-        alt="Modern Living Room"
-
-      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><img src="Images/sofa1.jpg" class="img-fluid" alt="Stylish Sofa" /></div>
+          <div class="col-md-3"><img src="Images/sofa2.jpg" class="img-fluid" alt="Comfortable Sofa" /></div>
+          <div class="col-md-3"><img src="Images/sofa3.jpg" class="img-fluid" alt="Modern Sofa" /></div>
+          <div class="col-md-3"><img src="Images/sofa4.jpg" class="img-fluid" alt="Luxury Sofa" /></div>
+        </div>
+      </div>
     </section>
 
     <section id="kitchen">
       <h2>Kitchen & Dining</h2>
-      <img
-        src="Images/kit1.jpg"
-        alt="Modern Kitchen"
-      />
-      <img
-        src="Images/kit2.jpg"
-        alt="Minimalist Kitchen"
-      />
-      <img
-        src="Images/kit3.jpg"
-        alt="Rustic Kitchen"
-
-      />
-      <img
-        src="Images/kit4.jpg"
-        alt="Luxury Kitchen"
-
-      />
-      <img
-        src="Images/living4.jpg"
-        alt="Elegant Living Room"
-
-      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><img src="Images/kit1.jpg" class="img-fluid" alt="Modern Kitchen" /></div>
+          <div class="col-md-3"><img src="Images/kit2.jpg" class="img-fluid" alt="Minimalist Kitchen" /></div>
+          <div class="col-md-3"><img src="Images/kit3.jpg" class="img-fluid" alt="Rustic Kitchen" /></div>
+          <div class="col-md-3"><img src="Images/kit4.jpg" class="img-fluid" alt="Luxury Kitchen" /></div>
+        </div>
+      </div>
     </section>
 
     <section id="bed">
       <h2>Bedroom</h2>
-      <img
-        src="Images/bed1.jpg"
-        alt="Cozy Bedroom"
-
-      />
-      <img
-        src="Images/bed2.jpg"
-        alt="Modern Bedroom"
-      />
-      <img
-        src="Images/bed3.jpg"
-        alt="Minimalist Bedroom"
-      />
-      <img
-        src="Images/bed4.jpg"
-        alt="Luxury Bedroom"
-      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><img src="Images/bed1.jpg" class="img-fluid" alt="Cozy Bedroom" /></div>
+          <div class="col-md-3"><img src="Images/bed2.jpg" class="img-fluid" alt="Modern Bedroom" /></div>
+          <div class="col-md-3"><img src="Images/bed3.jpg" class="img-fluid" alt="Minimalist Bedroom" /></div>
+          <div class="col-md-3"><img src="Images/bed4.jpg" class="img-fluid" alt="Luxury Bedroom" /></div>
+        </div>
+      </div>
     </section>
 
     <section id="office">
-      <h2>Office & School Furniture</h2>
-      <img
-        src="Images/off1.jpg"
-        alt="Modern Office Desk"
-      />
-      <img
-        src="Images/off2.jpg"
-        alt="Ergonomic Chair"
-      />
-      <img
-        src="Images/off3.jpg"
-        alt="Office Shelf"
-      />
-      <img
-        src="Images/off4.jpg"
-        alt="Workspace Setup"
-      />
+      <h2>Office & Study</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><img src="Images/off1.jpg" class="img-fluid" alt="Modern Office Desk" /></div>
+          <div class="col-md-3"><img src="Images/off2.jpg" class="img-fluid" alt="Ergonomic Chair" /></div>
+          <div class="col-md-3"><img src="Images/off3.jpg" class="img-fluid" alt="Office Shelf" /></div>
+          <div class="col-md-3"><img src="Images/off4.jpg" class="img-fluid" alt="Workspace Setup" /></div>
+        </div>
+      </div>
     </section>
 
     <hr />
 
-    <footer
-      style="
-        text-align: center;
-        margin-top: 30px;
-        padding: 10px;
-        color: #2e6b0e;
-      "
-    >
+    <footer style="text-align: center; margin-top: 30px; padding: 10px; color: #2e6b0e;">
       <p>&copy; 2025 Furnify. All rights reserved.</p>
-      <p>
-        Contact us:
-        <a href="mailto:info@furnify.com" style="color: #2e6b0e"
-          >info@furnify.com</a
-        >
-      </p>
+      <p>Contact us: <a href="mailto:info@furnify.com" style="color: #2e6b0e">info@furnify.com</a></p>
     </footer>
   </body>
 </html>
